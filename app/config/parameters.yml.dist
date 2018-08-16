@@ -17,3 +17,10 @@ parameters:
 
     # A secret key that's used to generate certain security-related tokens
     secret: ThisTokenIsNotSoSecretChangeIt
+
+    # Contentful settings
+    contentful.default_space: DEFAULT_SPACE
+    contentful.default_token: DEFAULT_TOKEN
+
+    # Netgen Layouts settings
+    netgen_block_manager.admin.password: admin

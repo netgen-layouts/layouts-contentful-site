@@ -3,11 +3,22 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+
+        {% block stylesheets %}
+            {% include '@NetgenBlockManager/stylesheets.html.twig' %}
+            {% include '@NetgenBlockManagerStandard/stylesheets.html.twig' with {full: true} %}
+        {% endblock %}
+
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block layout %}
+            {% block content %}{% endblock %}
+        {% endblock %}
+
+        {% block javascripts %}
+            {% include '@NetgenBlockManager/javascripts.html.twig' %}
+            {% include '@NetgenBlockManagerStandard/javascripts.html.twig' with {full: true} %}
+        {% endblock %}
     </body>
 </html>

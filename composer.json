@@ -1,8 +1,22 @@
 {
-    "name": "symfony/framework-standard-edition",
+    "name": "netgen/layouts-contentful-site",
     "license": "MIT",
     "type": "project",
-    "description": "The \"Symfony Standard Edition\" distribution",
+    "description": "Skeleton project allowing you to bootstrap a new site based on Netgen Layouts and Contentful",
+    "authors": [
+        {
+            "name": "Fabien Potencier",
+            "email": "fabien@symfony.com"
+        },
+        {
+            "name": "Symfony Community",
+            "homepage": "https://symfony.com/contributors"
+        },
+        {
+            "name": "Netgen",
+            "homepage": "https://www.netgenlabs.com"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "AppBundle\\": "src/AppBundle"
@@ -14,21 +28,31 @@
         "files": [ "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php" ]
     },
     "require": {
-        "php": ">=5.5.9",
-        "doctrine/doctrine-bundle": "^1.6",
-        "doctrine/orm": "^2.5",
-        "incenteev/composer-parameter-handler": "^2.0",
+        "php": "^7.1",
+        "doctrine/doctrine-bundle": "^1.9",
+        "doctrine/orm": "^2.6",
+        "incenteev/composer-parameter-handler": "^2.1",
         "sensio/distribution-bundle": "^5.0.19",
-        "sensio/framework-extra-bundle": "^5.0.0",
-        "symfony/monolog-bundle": "^3.1.0",
-        "symfony/polyfill-apcu": "^1.0",
-        "symfony/swiftmailer-bundle": "^2.6.4",
-        "symfony/symfony": "3.4.*",
-        "twig/twig": "^1.0||^2.0"
+        "sensio/framework-extra-bundle": "^5.2",
+        "symfony/monolog-bundle": "^3.3",
+        "symfony/polyfill-apcu": "^1.9",
+        "symfony/swiftmailer-bundle": "^3.2",
+        "symfony/symfony": "^3.4",
+        "twig/twig": "^2.0",
+
+        "netgen/layouts-standard": "~0.12.0",
+        "netgen/layouts-contentful": "~0.12.0"
     },
     "require-dev": {
-        "sensio/generator-bundle": "^3.0",
-        "symfony/phpunit-bridge": "^3.0"
+        "sensio/generator-bundle": "^3.1",
+        "symfony/phpunit-bridge": "^4.1",
+
+        "franzl/studio": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "preferred-install": "dist"
     },
     "scripts": {
         "symfony-scripts": [
@@ -46,12 +70,6 @@
             "@symfony-scripts"
         ]
     },
-    "config": {
-        "platform": {
-            "php": "5.6"
-        },
-        "sort-packages": true
-    },
     "extra": {
         "symfony-app-dir": "app",
         "symfony-bin-dir": "bin",
@@ -63,7 +81,7 @@
             "file": "app/config/parameters.yml"
         },
         "branch-alias": {
-            "dev-master": "3.4-dev"
+            "dev-master": "0.12.x-dev"
         }
     }
 }

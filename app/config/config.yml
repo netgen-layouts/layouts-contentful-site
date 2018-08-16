@@ -9,8 +9,8 @@ parameters:
     locale: en
 
 framework:
-    #esi: ~
-    #translator: { fallbacks: ['%locale%'] }
+    esi: ~
+    translator: { fallbacks: ['%locale%'] }
     secret: '%secret%'
     router:
         resource: '%kernel.project_dir%/app/config/routing.yml'
@@ -19,6 +19,7 @@ framework:
     csrf_protection: ~
     validation: { enable_annotations: true }
     #serializer: { enable_annotations: true }
+    templating: { engines: ['twig'] }
     default_locale: '%locale%'
     trusted_hosts: ~
     session:
@@ -69,3 +70,24 @@ swiftmailer:
 sensio_framework_extra:
    router:
         annotations: false
+
+netgen_block_manager:
+    pagelayout: 'base.html.twig'
+
+contentful:
+    delivery:
+        clients:
+            default:
+                space: '%contentful.default_space%'
+                token: '%contentful.default_token%'
+
+cmf_routing:
+    chain:
+        routers_by_id:
+            router.default: 200
+            cmf_routing.dynamic_router: 100
+    dynamic:
+        default_controller: 'ngbm_contentful:view'
+        persistence:
+            orm:
+                enabled: true

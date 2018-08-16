@@ -16,6 +16,22 @@ class AppKernel extends Kernel
             new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+
+            new Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
+            new Contentful\ContentfulBundle\ContentfulBundle(),
+
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new FOS\HttpCacheBundle\FOSHttpCacheBundle(),
+            new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
+            new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
+            new Netgen\Bundle\ContentBrowserBundle\NetgenContentBrowserBundle(),
+            new Netgen\Bundle\ContentBrowserUIBundle\NetgenContentBrowserUIBundle(),
+            new Netgen\Bundle\BlockManagerBundle\NetgenBlockManagerBundle(),
+            new Netgen\Bundle\BlockManagerStandardBundle\NetgenBlockManagerStandardBundle(),
+            new Netgen\Bundle\BlockManagerUIBundle\NetgenBlockManagerUIBundle(),
+            new Netgen\Bundle\BlockManagerAdminBundle\NetgenBlockManagerAdminBundle(),
+            new Netgen\Bundle\ContentfulBlockManagerBundle\NetgenContentfulBlockManagerBundle(),
+
             new AppBundle\AppBundle(),
         ];
 
@@ -23,6 +39,7 @@ class AppKernel extends Kernel
             $bundles[] = new Symfony\Bundle\DebugBundle\DebugBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
+            $bundles[] = new Netgen\Bundle\BlockManagerDebugBundle\NetgenBlockManagerDebugBundle();
 
             if ('dev' === $this->getEnvironment()) {
                 $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
