@@ -30,7 +30,7 @@ class AppKernel extends Kernel
             new Netgen\Bundle\BlockManagerStandardBundle\NetgenBlockManagerStandardBundle(),
             new Netgen\Bundle\BlockManagerUIBundle\NetgenBlockManagerUIBundle(),
             new Netgen\Bundle\BlockManagerAdminBundle\NetgenBlockManagerAdminBundle(),
-            new Netgen\Bundle\ContentfulBlockManagerBundle\NetgenContentfulBlockManagerBundle(),
+            new Netgen\Bundle\LayoutsContentfulBundle\NetgenLayoutsContentfulBundle(),
 
             new AppBundle\AppBundle(),
         ];

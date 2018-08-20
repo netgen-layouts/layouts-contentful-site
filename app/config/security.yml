@@ -8,7 +8,7 @@ security:
             memory:
                 users:
                     admin:
-                        password: "%netgen_block_manager.admin.password%"
+                        password: "%netgen_layouts.contentful.admin.password%"
                         roles: ROLE_NGBM_ADMIN
 
     encoders:

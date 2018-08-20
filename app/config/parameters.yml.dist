@@ -23,4 +23,4 @@ parameters:
     contentful.default_token: DEFAULT_TOKEN
 
     # Netgen Layouts settings
-    netgen_block_manager.admin.password: admin
+    netgen_layouts.contentful.admin.password: admin
