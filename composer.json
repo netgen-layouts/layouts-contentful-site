@@ -40,8 +40,8 @@
         "symfony/symfony": "^3.4",
         "twig/twig": "^2.0",
 
-        "netgen/layouts-standard": "~0.12.0",
-        "netgen/layouts-contentful": "~0.12.0"
+        "netgen/layouts-standard": "~0.13.0",
+        "netgen/layouts-contentful": "~0.13.0"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.1",
@@ -49,6 +49,8 @@
 
         "franzl/studio": "*"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "config": {
         "preferred-install": "dist"
     },
@@ -79,7 +81,7 @@
             "file": "app/config/parameters.yml"
         },
         "branch-alias": {
-            "dev-master": "0.12.x-dev"
+            "dev-master": "0.13.x-dev"
         }
     }
 }
