@@ -1,7 +1,16 @@
 security:
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
-        in_memory: { memory: ~ }
+        in_memory:
+            memory:
+                users:
+                    admin:
+                        password: "%env(NETGEN_LAYOUTS_CONTENTFUL_ADMIN_PASS)%"
+                        roles: ROLE_NGLAYOUTS_ADMIN
+
+    encoders:
+        Symfony\Component\Security\Core\User\User: plaintext
+
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
@@ -15,8 +24,12 @@ security:
             # https://symfony.com/doc/current/security/impersonating_user.html
             # switch_user: true
 
+            http_basic: ~
+
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
     access_control:
         # - { path: ^/admin, roles: ROLE_ADMIN }
         # - { path: ^/profile, roles: ROLE_USER }
+        - { path: ^/nglayouts/(api|(dev/)?app|admin), role: [ROLE_NGLAYOUTS_ADMIN] }
+        - { path: ^/cb, role: [ROLE_NGLAYOUTS_ADMIN] }

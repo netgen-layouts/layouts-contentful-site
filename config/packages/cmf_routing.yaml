@@ -1,0 +1,10 @@
+cmf_routing:
+    chain:
+        routers_by_id:
+            router.default: 200
+            cmf_routing.dynamic_router: 100
+    dynamic:
+        default_controller: 'nglayouts_contentful:view'
+        persistence:
+            orm:
+                enabled: true

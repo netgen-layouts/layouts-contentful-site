@@ -1,4 +1,7 @@
 {
+    "aptoma/twig-markdown": {
+        "version": "3.2.0"
+    },
     "cache/adapter-common": {
         "version": "1.1.0"
     },
@@ -10,6 +13,9 @@
     },
     "cache/void-adapter": {
         "version": "1.0.0"
+    },
+    "clue/stream-filter": {
+        "version": "v1.4.1"
     },
     "contentful/contentful": {
         "version": "4.1.1"
@@ -126,11 +132,26 @@
     "egulias/email-validator": {
         "version": "2.1.9"
     },
+    "emodric/twig-package-versions": {
+        "version": "1.0.0"
+    },
+    "erusev/parsedown": {
+        "version": "1.7.3"
+    },
+    "ezyang/htmlpurifier": {
+        "version": "v4.10.0"
+    },
     "fig/link-util": {
         "version": "1.0.0"
     },
     "franzl/studio": {
         "version": "0.13.0"
+    },
+    "friendsofsymfony/http-cache": {
+        "version": "2.7.0"
+    },
+    "friendsofsymfony/http-cache-bundle": {
+        "version": "2.7.0"
     },
     "guzzlehttp/guzzle": {
         "version": "6.3.3"
@@ -147,17 +168,68 @@
     "jean85/pretty-package-versions": {
         "version": "1.2"
     },
+    "knplabs/knp-menu": {
+        "version": "2.3.0"
+    },
+    "knplabs/knp-menu-bundle": {
+        "version": "2.2.2"
+    },
     "monolog/monolog": {
         "version": "1.24.0"
     },
+    "netgen/content-browser": {
+        "version": "1.0.0"
+    },
+    "netgen/content-browser-ui": {
+        "version": "1.0.0"
+    },
+    "netgen/layouts-contentful": {
+        "version": "1.0.0"
+    },
+    "netgen/layouts-core": {
+        "version": "1.0.0"
+    },
+    "netgen/layouts-standard": {
+        "version": "1.0.0"
+    },
+    "netgen/layouts-ui": {
+        "version": "1.0.0"
+    },
     "nikic/php-parser": {
         "version": "v4.2.2"
+    },
+    "nikolaposa/version": {
+        "version": "3.1.0"
     },
     "ocramius/package-versions": {
         "version": "1.4.0"
     },
     "ocramius/proxy-manager": {
         "version": "2.2.2"
+    },
+    "pagerfanta/pagerfanta": {
+        "version": "v2.1.2"
+    },
+    "php-http/client-common": {
+        "version": "1.9.1"
+    },
+    "php-http/discovery": {
+        "version": "1.7.0"
+    },
+    "php-http/httplug": {
+        "version": "v1.1.0"
+    },
+    "php-http/message": {
+        "version": "1.7.2"
+    },
+    "php-http/message-factory": {
+        "version": "v1.0.2"
+    },
+    "php-http/promise": {
+        "version": "v1.0.0"
+    },
+    "php-http/socket-client": {
+        "version": "v1.4.1"
     },
     "phpdocumentor/reflection-common": {
         "version": "1.0.1"
@@ -167,6 +239,9 @@
     },
     "phpdocumentor/type-resolver": {
         "version": "0.4.0"
+    },
+    "phplang/scope-exit": {
+        "version": "1.0.0"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -189,6 +264,9 @@
     "ralouphie/getallheaders": {
         "version": "3.0.3"
     },
+    "ramsey/uuid": {
+        "version": "3.8.0"
+    },
     "sensio/framework-extra-bundle": {
         "version": "5.2",
         "recipe": {
@@ -201,8 +279,20 @@
             "config/packages/sensio_framework_extra.yaml"
         ]
     },
+    "swaggest/json-diff": {
+        "version": "v3.7.0"
+    },
+    "swaggest/json-schema": {
+        "version": "v0.12.11"
+    },
     "swiftmailer/swiftmailer": {
         "version": "v6.2.1"
+    },
+    "symfony-cmf/routing": {
+        "version": "2.1.0"
+    },
+    "symfony-cmf/routing-bundle": {
+        "version": "2.1.1"
     },
     "symfony/asset": {
         "version": "v4.3.2"
@@ -410,6 +500,9 @@
     "symfony/property-info": {
         "version": "v4.3.2"
     },
+    "symfony/proxy-manager-bridge": {
+        "version": "v4.3.2"
+    },
     "symfony/routing": {
         "version": "4.2",
         "recipe": {
@@ -559,11 +652,29 @@
     "symfony/yaml": {
         "version": "v4.3.2"
     },
+    "twig/extensions": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "ddb2e0a77773b7fd75d8d649545f174e664500ab"
+        },
+        "files": [
+            "config/packages/twig_extensions.yaml"
+        ]
+    },
     "twig/twig": {
         "version": "v2.11.3"
     },
     "webmozart/assert": {
         "version": "1.4.0"
+    },
+    "white-october/pagerfanta-bundle": {
+        "version": "v1.2.4"
+    },
+    "xemlock/htmlpurifier-html5": {
+        "version": "v0.1.10"
     },
     "zendframework/zend-code": {
         "version": "3.3.1"

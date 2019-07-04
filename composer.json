@@ -35,7 +35,10 @@
         "symfony/web-link": "*",
         "symfony/yaml": "*",
 
-        "contentful/contentful-bundle": "^4.0"
+        "contentful/contentful-bundle": "^4.0",
+
+        "netgen/layouts-standard": "~1.0.0",
+        "netgen/layouts-contentful": "~1.0.0"
     },
     "require-dev": {
         "symfony/debug-pack": "*",
