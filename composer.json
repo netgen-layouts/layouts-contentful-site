@@ -33,7 +33,9 @@
         "symfony/twig-bundle": "*",
         "symfony/validator": "*",
         "symfony/web-link": "*",
-        "symfony/yaml": "*"
+        "symfony/yaml": "*",
+
+        "contentful/contentful-bundle": "^4.0"
     },
     "require-dev": {
         "symfony/debug-pack": "*",
