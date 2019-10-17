@@ -37,8 +37,8 @@
 
         "contentful/contentful-bundle": "^4.0",
 
-        "netgen/layouts-standard": "~1.0.0",
-        "netgen/layouts-contentful": "~1.0.0"
+        "netgen/layouts-standard": "~1.1.0",
+        "netgen/layouts-contentful": "~1.1.0"
     },
     "require-dev": {
         "symfony/debug-pack": "*",
@@ -49,6 +49,8 @@
 
         "franzl/studio": "*"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "config": {
         "preferred-install": {
             "*": "dist"
@@ -93,7 +95,7 @@
             "require": "4.3.*"
         },
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-master": "1.1.x-dev"
         }
     }
 }
