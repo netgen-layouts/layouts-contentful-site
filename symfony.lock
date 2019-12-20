@@ -127,7 +127,7 @@
         ]
     },
     "egulias/email-validator": {
-        "version": "2.1.11"
+        "version": "2.1.12"
     },
     "emodric/twig-package-versions": {
         "version": "1.0.1"
@@ -166,7 +166,7 @@
         "version": "v3.0.0"
     },
     "monolog/monolog": {
-        "version": "1.25.2"
+        "version": "1.25.3"
     },
     "netgen/content-browser": {
         "version": "1.0",
@@ -181,10 +181,10 @@
         ]
     },
     "netgen/content-browser-ui": {
-        "version": "1.1.x-dev"
+        "version": "1.1.0"
     },
     "netgen/layouts-contentful": {
-        "version": "1.1.x-dev"
+        "version": "1.1.0"
     },
     "netgen/layouts-core": {
         "version": "1.0",
@@ -199,10 +199,10 @@
         ]
     },
     "netgen/layouts-standard": {
-        "version": "1.1.x-dev"
+        "version": "1.1.0"
     },
     "netgen/layouts-ui": {
-        "version": "1.1.x-dev"
+        "version": "1.1.0"
     },
     "nikic/php-parser": {
         "version": "v4.3.0"
@@ -247,7 +247,7 @@
         "version": "2.0.0"
     },
     "phpdocumentor/reflection-docblock": {
-        "version": "4.3.2"
+        "version": "4.3.3"
     },
     "phpdocumentor/type-resolver": {
         "version": "1.0.1"
