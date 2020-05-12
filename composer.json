@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": "^7.2",
+        "php": "^7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "sensio/framework-extra-bundle": "^5.1",
@@ -25,10 +25,12 @@
         "symfony/intl": "*",
         "symfony/mailer": "*",
         "symfony/monolog-bundle": "^3.1",
+        "symfony/notifier": "*",
         "symfony/orm-pack": "*",
         "symfony/process": "*",
         "symfony/security-bundle": "*",
         "symfony/serializer-pack": "*",
+        "symfony/string": "*",
         "symfony/translation": "*",
         "symfony/twig-pack": "*",
         "symfony/validator": "*",
@@ -67,6 +69,7 @@
         "paragonie/random_compat": "2.*",
         "symfony/polyfill-ctype": "*",
         "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-php72": "*",
         "symfony/polyfill-php71": "*",
         "symfony/polyfill-php70": "*",
         "symfony/polyfill-php56": "*"
@@ -89,7 +92,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": true,
-            "require": "4.4.*"
+            "require": "5.0.*"
         },
         "branch-alias": {
             "dev-master": "1.2.x-dev"
