@@ -24,6 +24,7 @@
         "symfony/http-client": "*",
         "symfony/intl": "*",
         "symfony/mailer": "*",
+        "symfony/mime": "*",
         "symfony/monolog-bundle": "^3.1",
         "symfony/notifier": "*",
         "symfony/orm-pack": "*",
@@ -51,6 +52,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
+        "optimize-autoloader": true,
         "preferred-install": {
             "*": "dist"
         }
@@ -92,7 +94,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": true,
-            "require": "5.0.*"
+            "require": "5.1.*"
         },
         "branch-alias": {
             "dev-master": "1.2.x-dev"
