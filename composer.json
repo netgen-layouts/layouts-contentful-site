@@ -38,7 +38,7 @@
         "symfony/web-link": "*",
         "symfony/yaml": "*",
 
-        "contentful/contentful-bundle": "^6.0.2",
+        "contentful/contentful-bundle": "^6.0.3",
 
         "netgen/layouts-standard": "~1.2.0",
         "netgen/layouts-contentful": "~1.2.0"
