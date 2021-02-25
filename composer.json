@@ -40,8 +40,8 @@
 
         "contentful/contentful-bundle": "^6.0.3",
 
-        "netgen/layouts-standard": "~1.2.0",
-        "netgen/layouts-contentful": "~1.2.0"
+        "netgen/layouts-standard": "~1.3.0",
+        "netgen/layouts-contentful": "~1.3.0"
     },
     "require-dev": {
         "symfony/debug-pack": "*",
@@ -95,7 +95,7 @@
             "require": "5.1.*"
         },
         "branch-alias": {
-            "dev-master": "1.2.x-dev"
+            "dev-master": "1.3.x-dev"
         }
     }
 }
