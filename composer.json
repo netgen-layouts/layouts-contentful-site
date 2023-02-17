@@ -35,7 +35,8 @@
     "config": {
         "allow-plugins": {
             "symfony/flex": true,
-            "symfony/runtime": true
+            "symfony/runtime": true,
+            "*": false
         }
     },
     "autoload": {
